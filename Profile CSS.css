@@ -1,0 +1,15 @@
+body {
+    background-color: #E3DBD7;
+}
+h1 {
+    font-family: "Open Sans";
+}
+p {
+    font-size:16px;
+    font-family: "Open Sans";
+    font-style: normal;
+}
+div {
+    padding: 100px;
+    border: 1px solid #111111;
+}
