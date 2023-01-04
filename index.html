@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Donovan Frazier Profile</title>
+
+    <!--Styling in the stylesheet and javascript files sourced below-->
     <link rel="stylesheet" href="Profile CSS.css">
     <script src="Header.js"></script>
 </head>
@@ -12,33 +14,42 @@
         
         
 <body>
-       <div class="header" id="myHeader">
+<!--Div elements are used to create blocks of content-->
+
+        <!--This is the header-->
+        <div class="header" id="myHeader">
         <ul>
             <li><a href="https://profile.donovanfrazier.com/index.html">Home</a></li>
             <li><a href="https://profile.donovanfrazier.com/resume.html">Resume</a></li>
             <li><a href="https://profile.donovanfrazier.com/portfolio.html">Portfolio</a></li>
             <li><a href="https://profile.donovanfrazier.com/contact.html">Contact</a></li>
         </ul>
+
+        <h3 style="text-align:center;">
+            Donovan Frazier
+        </h3>
     </div>
 
+    <!--Padding top of 100px so there is space for the header above-->
     <div class="content">
-        <h1 class="center-text">Donovan Frazier</h1>
+        <h1 class="center-text" style="padding-top:100px;">Profile</h1>
             
-            <div class="row">
-                <div class="column big-left">
+        <!--This is the bio-->
+            <div class="column2">
+                <div class="center-columns">
                     <h1 class="center-text">About</h1>
-                    <p class="left-text">I'm a 20 something writer, historian, web developer, and game developer. I graduated from the University of California, Riverside with a Bachelor degrees in History and Creative Writing.</p>
-                    <p class="left-text">I primarily studied world history and the literary world, but I also have a background in computer science and psychology.</p>
-                    <p class="left-text">In my spare time, I write manuscripts in speculative fiction, develop video games, and sketch.</p>
+                    <p class="left-text">I'm a 20 something writer, historian, web developer, and game developer. I graduated from the University of California, Riverside with a Bachelor degrees in History and Creative Writing. <br><br>
+                    I primarily studied world history and the literary world, but I also have a background in computer science and psychology. <br><br>
+                    In my spare time, I write manuscripts in speculative fiction, develop video games, and sketch.</p>
+                    
+                    <br>
+                    <img src="Author Cropped Profile Image.png" alt="Portrait of Donovan Frazier" class="center-text" style="width:384.4px;height:355.8px;">
                 </div>
-
-                <div class="column right">
-                    <img src="Author Cropped Profile Image.png" alt="Portrait of Donovan Frazier" class="center-text" style="float:left;width:192.2px;height:177.9px;">
-                
-            </div>
         </div>
 
-            
+        <!--This is the Expertise block-->
+        <br>
+    <div class="div-background">
         <h1 class="center-text">Expertise</h1>
 
             <div class="center-text">
@@ -50,47 +61,54 @@
                     Web Development
                 </h2>
             </div>
+    </div>
 
+        <!--The content is displayed in three columns-->
         <h1 class="center-text">Experience</h1>
 
-            <div class="row">
-                <div class="column left">
+            <div class="column3">
                     <div class="left-text">
-                        <p>Aug 2021 - Jan 2023 <b>Corriculum Development Student Assistant</b></p>
+                        <p>Aug 2021 - Jan 2023</p>
+                        <p class="thick">Corriculum Development Student Assistant</p>
                         <p>University of California, Riverside <br>Library: Department of Teaching and Learning</p>
                     </div>
-                </div>
 
-
-                <div class="column middle">
+                    <br>
                     <div class="left-text">
-                        <p>Dec 2021 - Jan 2023 <b>Outlook Coordinator</b></p>
+                        <p>Dec 2021 - Jan 2023</p>
+                        <p class="thick">Outlook Coordinator</p>
                         <p>Gamespawn: Game Development Club</p>
                     </div>
-                </div>
-
-                <div class="column right">
+                    
+                    <br>
                     <div class="left-text">
-                        <p>Apr 2021 - Jun 2022 <b>Volunteer Developmental Editor and Producer</b></p>
+                        <p>Apr 2021 - Jun 2022</p>
+                        <p class="thick">Volunteer Developmental Editor and Producer</p>
                         <p>Silver Sun Project</p>
                     </div>
-                </div>
             </div>
             
+        <!--The content is displayed as a long centered row with bolding the exact degree-->
+    <div class="div-background">
         <h1 class="center-text">Education</h1>
 
             <div class="center-text">
-                <h3 class="thick">University of California, Riverside 2019-2022</h3>
+                <p>Sep 2019 - Dec 2022</p>
+                <h3>University of California, Riverside</h3>
                 <p>Bachelor of Arts: <b>History</b></p>
                 <p>Bachelor of Arts: <b>Creative Writing</b></p>
+                <br>
 
-                <h3 class="thick">Moreno Valley College 2017-2019</h3>
-                <p>Associates of Science: <b>Behavioral Science</b></p>
-                <p>Associates of Arts: <b>Communication</b></p>
-                <p>Associates of Arts: <b></b></p>
+                <p>June 2017 - May 2019</p>
+                <h3>Moreno Valley College</h3>
+                <p>Associate of Arts: <b>Social and Behavioral Studies</b> with distinction</p>
+                <p>Associate of Arts: <b>Communication, Media, and Language</b> with distinction</p>
+                <p>Associate of Arts: <b>Humanities, Philosophy, and Arts</b> with distinction</p>
 
             </div>
-
+    </div>
+    
+        <!--This content is displayed like the education section above-->
         <h1 class="center-text">Awards</h1>
 
             <div class="center-text">
@@ -104,7 +122,8 @@
     </div>
             
 </body>
-        
+     
+<!--This is the footer-->
  <footer>
     <ul>
         <li><a href="https://profile.donovanfrazier.com/index.html">Home</a></li>

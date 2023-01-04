@@ -1,3 +1,4 @@
+/*Body and paragraph styling below*/
 body {
     background-color: #F2EFE4;
     font-family:"Open Sans";
@@ -12,49 +13,63 @@ p.thick {
 .center-text {
     margin:auto;
     text-align:center;
-    border:1px solid #111111;
+    /* border:1px solid #111111; */
     width: 50%;
-    padding: 25px 25px 25px 25px;
+    padding: 10px 10px 10px 10px;
 }
 .left-text {
     margin:auto;
     text-align:left;
-    border:1px solid #111111;
-    width: 50%;
-    padding: 25px 25px 25px 25px;
+    /* border:1px solid #111111; */
+    padding: 10px 10px 10px 10px;
 }
 h1 {
-    padding: 25px 25px 25px 25px;
+    padding: 10px 10px 10px 10px;
 }
 
+/*Default div column styling below*/
+.column3 {
+    columns:3 auto;
+}
+.column2 {
+    columns:2 auto;
+    column-gap:100px;
+    padding-left:100px;
+    padding-right:100px;
+}
+.center-columns {
+    box-align:center;
+    /* border:1px solid #111111; */
+}
 
+/*Row div column styling below*/
 .block {
-    padding: 100px;
-    border: 1px solid #111111;
+    padding:100px;
+    /* border:1px solid #111111; */
 }
 .left {
-    float: left;
-    width: 30%;
+    float:left;
+    width:30%;
     padding:10px;
-    height:300px;
+    height:250px;
 }
 .middle {
-    float: left;
-    width: 30%;
+    float:left;
+    width:30%;
     padding:10px;
-    height:300px;
+    height:250px;
 }
 .right {
-    float: left;
-    width: 30%;
+    float:left;
+    width:30%;
     padding:10px;
-    height:300px;
+    height:250px;
 }
 .big-left {
     float:left;
     width:60%;
     padding:10px;
-    height:300px;
+    height:200px;
 }
 .row:after {
     content: "";
@@ -62,17 +77,24 @@ h1 {
     clear:both;
 }
 
+/*Background color of a div block*/
+.div-background {
+    background-color:#555555;
+    color:white;
+}
+
+/*Header styling below*/
 .top-container {
     background-color: #f1f1f1;
     padding: 30px;
     text-align: center;
 }
 .header {
-    padding: 10px 16px;
     background: #555555;
     color: #f1f1f1;
     position:fixed;
     top:0;
+    width:100%;
 }
 .content {
     padding:16px;
@@ -86,6 +108,7 @@ h1 {
     padding-top:102px;
 }
 
+/*Footer styling below*/
 footer {
     padding:1px;
     background-color: #555555;
@@ -113,6 +136,7 @@ li a:hover {
     color:#45a049;
 }
 
+/*Contact form styling*/
 input[type=text], select, textarea {
     width: 100%;
     padding:12px;
