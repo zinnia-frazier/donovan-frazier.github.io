@@ -27,6 +27,11 @@ h1 {
     padding: 10px 10px 10px 10px;
 }
 
+/**/
+hr.solid {
+    width:50%;
+}
+
 /*Default div column styling below*/
 .column3 {
     columns:3 auto;
