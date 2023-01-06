@@ -27,9 +27,9 @@ h1 {
     padding: 10px 10px 10px 10px;
 }
 
-/**/
+/*Divider line*/
 hr.solid {
-    width:50%;
+    width:75%;
 }
 
 /*Default div column styling below*/
@@ -46,6 +46,11 @@ hr.solid {
     box-align:center;
     /* border:1px solid #111111; */
 }
+
+/*Divider styling*/
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
 
 /*Row div column styling below*/
 .block {
@@ -123,19 +128,23 @@ ul {
     list-style-type: none;
     overflow:hidden;
 }
+ul.standard {
+    list-style-type:circle;
+    color:black;
+}
 li {
-    display:inline;
     float:left;
     padding:5px;
     text-align:center;
-    color:white;
-    background-color: #555555;
 }
 li a {
     display:block;
+    display:inline;
+    float:left;
     padding:8px;
     color:white;
     text-align:center;
+    background-color:#555555;
 }
 li a:hover {
     color:#45a049;
