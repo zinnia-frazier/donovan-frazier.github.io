@@ -89,7 +89,6 @@ hr.solid {
 
 /*Background color of a div block*/
 .div-background {
-    background-color:#555555;
     color:white;
 }
 
@@ -100,11 +99,11 @@ hr.solid {
     text-align: center;
 }
 .header {
-    background: #555555;
-    color: #f1f1f1;
     position:fixed;
     top:0;
     width:100%;
+    background-color:#555555;
+    color:white;
 }
 .content {
     padding:16px;
@@ -116,6 +115,54 @@ hr.solid {
 }
 .sticky + .content {
     padding-top:102px;
+}
+
+/*Navbar*/
+.navbar {
+    justify-content:space-between;
+}
+.navbar ul li {
+    display:inline-block;
+    margin:0 20px;
+    position:relative;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid #009688;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+.navbar ul li::after {
+    content: '';
+    height:3px;
+    width:0px;
+    background:#009688;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after {
+    width:100%;
+}
+span {
+    background:#009688;
+    height:100%;
+    width:0%;
+    border-radius:25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+}
+.navbar ul li:hover span {
+    width:100%;
+}
+.navbar ul li:hover {
+    border:none;
 }
 
 /*Footer styling below*/
@@ -144,10 +191,9 @@ li a {
     padding:8px;
     color:white;
     text-align:center;
-    background-color:#555555;
 }
 li a:hover {
-    color:#45a049;
+    color:white;
 }
 
 /*Contact form styling*/
