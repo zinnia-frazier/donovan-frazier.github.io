@@ -4,7 +4,7 @@ body {
     font-family:"Open Sans";
 }
 p {
-    font-size:16px;
+    font-size:20px;
     padding-bottom:10px;
 }
 p.thick {
@@ -178,6 +178,7 @@ ul {
 ul.standard {
     list-style-type:circle;
     color:black;
+    font-size:20px;
 }
 li {
     float:left;
