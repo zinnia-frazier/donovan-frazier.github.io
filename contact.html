@@ -63,7 +63,7 @@
 
                 <div class="column right">
                     <p><a href="mailto:contact@donovanfrazier.com">
-                        <img src="Email icon.png">
+                        <img src="Email icon.png" style="width:350px;">
                     </a></p>
                 </div>
 
@@ -73,7 +73,8 @@
 
         <div class="center-text">
             <div class="container">
-                <form action="contact.php" method="post">
+
+                <form name="myForm" action="contact.php" onsubmit="return validateForm()" method="post">
                     <label for="fullname">Full name</label>
                     <input type="text" id="fullname" name="fullname" placeholder="Your name..."><br>
 
@@ -88,10 +89,11 @@
 
                     <input type="submit" value="Submit">
                 </form>
+
             </div>
         </div>
 
-        <h1 class="center-text">Looking for new oportunities</h1>
+        <script src="contactScript.js"></script>
 
 
     </div>        
