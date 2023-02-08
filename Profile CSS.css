@@ -233,7 +233,7 @@ footer {
     background-color: #333;
     width:100%;
 }
-ul {
+ul.footer {
     list-style-type: none;
     overflow:hidden;
 }
