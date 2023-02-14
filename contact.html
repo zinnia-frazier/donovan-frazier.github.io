@@ -73,57 +73,18 @@
 
         <div class="center-text">
             <div class="container">
-
-                <form name="myForm" action="contact.php" onsubmit="return validateForm()" method="post">
-                    <label for="fullname">Full name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Your name..."><br>
-
-                    <label for="email address">Email Address</label>
-                    <Input type="text" id="email address" name="email" placeholder="Your email address..."><br>
-
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Subject header..."></textarea><br>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" style="height:200px" placeholder="Type your message here..."></textarea><br>
-
-                    <input type="submit" value="Submit">
-                </form>
-
-            </div>
-        </div>
-
-        <div class="center-text">
-            <div class="container">
                 <form action="https://formspree.io/f/mqkopnyk" method="POST">
-                    <label for="fullname">Full name</label>
-                    <input type="text" name="fullname" placeholder="Your name..."><br>
+                    <label for="Name"></label>
+                    <input type="text" name="Name" placeholder="Name"><br>
 
-                    <label>Your email</label>
-                    <input type="email" name="email" placeholder="Your email address..."><br>
+                    <label for="Email"></label>
+                    <input type="email" name="Email" placeholder="Email"><br>
 
-                    <label>Your message</label>
-                    <textarea name="message" style="height:200px;" placeholder="Type your message here...">Send</textarea>
+                    <label for="Message"></label>
+                    <textarea type="message" name="Message" style="height:200px;" placeholder="Message"></textarea>
 
                 <!-- your other form fields go here -->
                     <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="center-text">
-            <div class="container">
-                <form action="https://formspree.io/f/mqkopnyk" method="POST">
-                <label>Your email:
-                <input type="email" name="email">
-                </label>
-
-                <label>Your message:
-                <textarea name="message"></textarea>
-                </label>
-
-            <!-- your other form fields go here -->
-                <button type="submit">Send</button>
                 </form>
             </div>
         </div>
