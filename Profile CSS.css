@@ -339,7 +339,7 @@ input[type=submit]:hover {
   /*Animations for images*/
 img {
     animation-name:fade-in;
-    animation-duration:2s;
+    animation-duration:1s;
 }
 @keyframes fade-in {
     0% {opacity:0;}
@@ -347,27 +347,27 @@ img {
 }
 p {
     animation-name:text-fade;
-    animation-duration:2s;
+    animation-duration:1s;
 }
 h1 {
     animation-name:text-fade;
-    animation-duration:2s;
+    animation-duration:1s;
 }
 h2 {
     animation-name:text-fade;
-    animation-duration:2s;
+    animation-duration:1s;
 }
 h3 {
     animation-name:text-fade;
-    animation-duration:2s;
+    animation-duration:1s;
 }
 hr {
     animation-name:text-fade;
-    animation-duration:2s;
+    animation-duration:1s;
 }
 li {
     animation-name:text-fade;
-    animation-duration:2s;
+    animation-duration:1s;
 }
 @keyframes text-fade {
     0% {opacity:0;}
