@@ -48,6 +48,7 @@ h1 {
 /*Divider line*/
 hr.solid {
     width:75%;
+    margin:auto;
     border-top:3px solid #bbb;
 }
 
@@ -267,6 +268,9 @@ li a {
 li a:hover {
     color:#ff0000;
 }
+p a:hover {
+    color:#ff0000;
+}
 
 /*Contact form styling*/
 input[type=text], select, textarea {
@@ -331,3 +335,41 @@ input[type=submit]:hover {
     width:750px;
     Padding-top:50px;
   }
+
+  /*Animations for images*/
+img {
+    animation-name:fade-in;
+    animation-duration:2s;
+}
+@keyframes fade-in {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+p {
+    animation-name:text-fade;
+    animation-duration:2s;
+}
+h1 {
+    animation-name:text-fade;
+    animation-duration:2s;
+}
+h2 {
+    animation-name:text-fade;
+    animation-duration:2s;
+}
+h3 {
+    animation-name:text-fade;
+    animation-duration:2s;
+}
+hr {
+    animation-name:text-fade;
+    animation-duration:2s;
+}
+li {
+    animation-name:text-fade;
+    animation-duration:2s;
+}
+@keyframes text-fade {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
