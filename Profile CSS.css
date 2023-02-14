@@ -31,6 +31,11 @@ h1 {
     padding: 10px 10px 10px 10px;
 }
 
+/*iframe*/
+iframe {
+    display:block;
+}
+
 /*Scroll wheel*/
 ::-webkit-scrollbar {
     width:15px;
@@ -55,6 +60,9 @@ hr.solid {
 /*Default div column styling below*/
 .column3 {
     columns:3 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .column2 {
     columns:2 auto;
@@ -291,6 +299,10 @@ hr {
     animation-duration:1s;
 }
 li {
+    animation-name:text-fade;
+    animation-duration:1s;
+}
+iframe {
     animation-name:text-fade;
     animation-duration:1s;
 }
