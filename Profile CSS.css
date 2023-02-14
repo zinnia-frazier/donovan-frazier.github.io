@@ -1,6 +1,6 @@
 /*Body and paragraph styling below*/
 body {
-    background-color: #F2EFE4;
+    background-color: #f2efe4;
     font-family:"Open Sans";
 }
 p {
@@ -107,81 +107,6 @@ hr.solid {
     color:white;
 }
 
-/*Header styling below
-.top-container {
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-}
-.header {
-    position:fixed;
-    top:0;
-    width:100%;
-    background-color:#555555;
-    color:white;
-}
-.content {
-    padding:16px;
-}
-.sticky {
-    position:fixed;
-    top:0;
-    width:100%;
-}
-.sticky + .content {
-    padding-top:102px;
-}*/
-
-/*Navbar out of date
-
-.navbar {
-    justify-content:space-between;
-}
-.navbar ul li {
-    display:inline-block;
-    margin:0 20px;
-    position:relative;
-    border-radius:25px;
-    font-weight:bold;
-    border:2px solid #009688;
-    background:transparent;
-    color:white;
-    cursor:pointer;
-    position:relative;
-    overflow:hidden;
-}
-.navbar ul li::after {
-    content: '';
-    height:3px;
-    width:0px;
-    background:#009688;
-    position: absolute;
-    left:0;
-    bottom:-10px;
-    transition:0.5s;
-}
-.navbar ul li:hover::after {
-    width:100%;
-}
-span {
-    background:#009688;
-    height:100%;
-    width:0%;
-    border-radius:25px;
-    position:absolute;
-    left:0;
-    bottom:0;
-    z-index:-1;
-    transition:0.5s;
-}
-.navbar ul li:hover span {
-    width:100%;
-}
-.navbar ul li:hover {
-    border:none;
-}
-*/
-
 /*Current Nav Bar*/
 .navbar {
     overflow: hidden;
@@ -273,7 +198,7 @@ p a:hover {
 }
 
 /*Contact form styling*/
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea[type=message] {
     width: 100%;
     padding:12px;
     border:1px solid #ccc;
@@ -283,7 +208,7 @@ input[type=text], select, textarea {
     margin-bottom:16px;
     resize:vertical;
 }
-input[type=submit] {
+button[type=submit] {
     background-color: #04AA6D;
     color:white;
     padding: 12px 20px;
@@ -291,12 +216,12 @@ input[type=submit] {
     border-radius:4px;
     cursor:pointer;
 }
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color:#45a049;
 }
 .container {
     border-radius:5px;
-    background-color:#f2f2f2;
+    background-color:#f2efe4;
     padding:20px;
 }
 
