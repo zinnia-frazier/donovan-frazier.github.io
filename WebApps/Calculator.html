@@ -64,43 +64,50 @@
 
         <!--Calculator display-->
         <div class="calc-screen">
-            <div id="calc-operation">12 + 34 + </div>
-            <div id="calc-typed">46</div>
+            <div id="calc-operation"><p id="steps"></p></div>
+            <div id="calc-typed"><p id="solution"></p></div>
+
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
         </div>
 
         <!--Calculator buttons-->
         <div class="calc-button-row">
-            <button class="ac">AC</button>
-            <button class="opt">&#43;&#47;&#8722;</button>
-            <button class="opt">&#37;</button>
-            <button class="opt">&#247;</button>
+            <button data-all-clear class="ac">AC</button>
+            <button data-operation class="opt">&#43;&#47;&#8722;</button>
+            <button data-operation class="opt">&#37;</button>
+            <button data-operation class="opt">&#247;</button>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
 
-            <button class="opt">&#215;</button>
+            <button data-operation class="opt">&#215;</button>
 
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
 
-            <button class="opt">&#8722;</button>
+            <button data-operation class="opt">&#8722;</button>
 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
 
-            <button class="opt">&#43;</button>
+            <button data-operation class="opt">&#43;</button>
 
-            <button>0</button>
-            <button>.</button>
+            <button data-number>0</button>
+            <button data-number>.</button>
 
-            <button>&#9003;</button>
-            <button class="opt">&#61;</button>
+            <button data-delete>&#9003;</button>
+            <button data-operation class="opt">&#61;</button>
         </div>
 
     </div>
+
+    <br><br><br><br><br>
 
 
     <!--This is where the calculator app has its script-->
