@@ -55,7 +55,7 @@ function handleTimer()
         timerValue = 0;
         timerText.innerHTML = "Out of time!";
         pause = true;
-        setTimeout(startNewTurn, 3000); // skip to new turn after 3 seconds of showing out of time prompt
+        setTimeout(startNewTurn, 30000); // skip to new turn after 30 seconds of showing out of time prompt
     }
     else
     {
