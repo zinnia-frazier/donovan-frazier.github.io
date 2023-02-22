@@ -18,7 +18,7 @@ button[type=submit] {
     cursor:pointer;
 }
 button[type=submit]:hover {
-    background-color:#45a049;
+    background-color:red;
 }
 .container {
     border-radius:5px;
