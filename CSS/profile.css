@@ -31,6 +31,19 @@ h1 {
     padding: 10px 10px 10px 10px;
 }
 
+/*General button styling*/
+button, form {
+    background-color: #333;
+    color:white;
+    padding: 12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+button:hover {
+    background-color:red;
+}
+
 /*iframe*/
 iframe {
     display:block;
@@ -122,6 +135,7 @@ hr.solid {
 .navbar {
     overflow: hidden;
     background-color: #333;
+    border-radius:10px;
 }
 .navbar a {
 float: left;
@@ -155,6 +169,7 @@ background-color: #f9f9f9;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
+border-radius:10px;
 }
 .dropdown-content a {
 float: none;
@@ -282,6 +297,14 @@ iframe {
     animation-duration:1s;
 }
 @keyframes text-fade {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.dropdown-content {
+    animation-name:dropdown-fade;
+    animation-duration:0.5s;
+}
+@keyframes dropdown-fade {
     0% {opacity:0;}
     100% {opacity:1;}
 }
