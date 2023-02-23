@@ -16,7 +16,7 @@
         
         
 <body>
-    <div class="content"></div>
+    <div class="content">
         <div class="header" id="myHeader">
             <div class="navbar">
                 
@@ -51,6 +51,12 @@
     </div>
 
     <div class="content">
+        <br><br>
+
+        <div style="float:left;">
+            <button type="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">Dark Mode</button>
+            <p>Interested in Dark Mode? <br> Try the button above!</p>
+        </div>
 
         <h1 class="center-text" style="padding-top:50px;">Get in Touch</h1>
 
@@ -90,11 +96,12 @@
                 </form>
             </div>
         </div>
+    </div>        
 
         <script src="JavaScript/contactScript.js"></script>
+        <script src="JavaScript/darkMode.js"></script>
 
 
-    </div>        
 </body>
         
  <footer>

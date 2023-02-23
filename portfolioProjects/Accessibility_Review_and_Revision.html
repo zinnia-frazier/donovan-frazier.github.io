@@ -18,7 +18,7 @@
 <!--Div elements are used to create blocks of content-->
 
         <!--This is the header-->
-    <div class="content"></div>
+    <div class="content">
         <div class="header" id="myHeader">
                 <div class="navbar">
                     
@@ -50,10 +50,17 @@
 
                 </div>
             </div>
-        </div>
+    </div>
 
     <!--Padding top of 100px so there is space for the header above-->
     <div class="content">
+
+        <br><br>
+
+        <div style="float:left;">
+            <button type="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">Dark Mode</button>
+            <p>Interested in Dark Mode? <br> Try the button above!</p>
+        </div>
 
         <img src="../images/Article.png" class="center">
 
@@ -84,6 +91,7 @@
 
     </div>
         
+    <script src="../JavaScript/darkMode.js"></script>
             
 </body>
         

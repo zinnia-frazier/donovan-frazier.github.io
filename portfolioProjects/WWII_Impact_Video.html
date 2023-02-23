@@ -18,7 +18,7 @@
 <!--Div elements are used to create blocks of content-->
 
         <!--This is the header-->
-        <div class="content"></div>
+        <div class="content">
             <div class="header" id="myHeader">
                 <div class="navbar">
                     
@@ -54,6 +54,12 @@
 
     <!--Padding top of 100px so there is space for the header above-->
     <div class="content">
+        <br><br>
+
+        <div style="float:left;">
+            <button type="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">Dark Mode</button>
+            <p>Interested in Dark Mode? <br> Try the button above!</p>
+        </div>
 
         <iframe width="916" height="480" src="https://www.youtube.com/embed/5kejdOwsbxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="center-text"></iframe>
 
@@ -81,6 +87,8 @@
             </div>
 
     </div>
+
+    <script src="../JavaScript/darkMode.js"></script>
         
             
 </body>

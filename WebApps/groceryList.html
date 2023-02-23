@@ -15,7 +15,7 @@
         
         
 <body>
-    <div class="content"></div>
+    <div class="content">
     <div class="header" id="myHeader">
         <div class="navbar">
             
@@ -50,6 +50,14 @@
 </div>
 
     <div class="content">
+        <br><br>
+
+        <div style="float:left;">
+            <button type="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">Dark Mode</button>
+            <p>Interested in Dark Mode? <br> Try the button above!</p>
+        </div>
+
+        
         <div class="center-text">
             <h1 style="padding-top:50px;">Automated Grocery List</h1>
 
@@ -66,6 +74,7 @@
 
     <!--This is where the grocery list app has its script-->
     <script src="../JavaScript/groceryList.js"></script>
+    <script src="../JavaScript/darkMode.js"></script>
 
                 
             
