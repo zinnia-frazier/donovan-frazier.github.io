@@ -30,6 +30,20 @@ li {
 h1 {
     padding: 10px 10px 10px 10px;
 }
+
+
+/*General button styling*/
+button, form {
+    background-color: #333;
+    color:white;
+    padding: 15px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+button:hover {
+    background-color:red;
+}
 .modeButtonStyle {
     background-color: white;
     color:black;
@@ -37,19 +51,6 @@ h1 {
 .dark-mode {
     background-color:black;
     color:white;
-}
-
-/*General button styling*/
-button, form {
-    background-color: #333;
-    color:white;
-    padding: 12px 20px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-}
-button:hover {
-    background-color:red;
 }
 
 /*iframe*/
