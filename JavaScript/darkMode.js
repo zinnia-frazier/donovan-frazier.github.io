@@ -6,4 +6,7 @@ function toggleButtonStyle() {
     var element = document.getElementById("modeButton");
     element.classList.toggle("modeButtonStyle");
 }
-
+function changeListColor() {
+    var element = document.body;
+    element.classList.toggle('listColor');
+}

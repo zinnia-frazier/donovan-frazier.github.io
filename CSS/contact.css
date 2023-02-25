@@ -8,6 +8,7 @@ input[type=text], input[type=email], select, textarea[type=message] {
     margin-top:6px;
     margin-bottom:16px;
     resize:vertical;
+    font-family:"Open Sans"
 }
 button[type=submit] {
     background-color: #04AA6D;
@@ -19,9 +20,4 @@ button[type=submit] {
 }
 button[type=submit]:hover {
     background-color:red;
-}
-.container {
-    border-radius:5px;
-    background-color:#f2efe4;
-    padding:20px;
 }

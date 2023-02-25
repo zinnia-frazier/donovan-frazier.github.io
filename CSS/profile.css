@@ -44,12 +44,19 @@ button, form {
 button:hover {
     background-color:red;
 }
+button:active {
+    box-shadow: 2px 2px 5px grey;
+    background-color:#990000;
+}
 .modeButtonStyle {
     background-color: white;
     color:black;
 }
 .dark-mode {
     background-color:black;
+    color:white;
+}
+.listColor {
     color:white;
 }
 
@@ -277,31 +284,7 @@ img {
     0% {opacity:0;}
     100% {opacity:1;}
 }
-p {
-    animation-name:text-fade;
-    animation-duration:1s;
-}
-h1 {
-    animation-name:text-fade;
-    animation-duration:1s;
-}
-h2 {
-    animation-name:text-fade;
-    animation-duration:1s;
-}
-h3 {
-    animation-name:text-fade;
-    animation-duration:1s;
-}
-hr {
-    animation-name:text-fade;
-    animation-duration:1s;
-}
-li {
-    animation-name:text-fade;
-    animation-duration:1s;
-}
-iframe {
+p, h1, h2, h3, hr, li, iframe {
     animation-name:text-fade;
     animation-duration:1s;
 }
@@ -316,4 +299,8 @@ iframe {
 @keyframes dropdown-fade {
     0% {opacity:0;}
     100% {opacity:1;}
+}
+.dark-mode {
+    animation-name:text-fade;
+    animation-duration:0.5s;
 }
