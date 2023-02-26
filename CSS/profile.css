@@ -13,7 +13,6 @@ p.thick {
 .center-text {
     margin:auto;
     text-align:center;
-    /* border:1px solid #111111; */
     width: 50%;
     padding: 10px 10px 10px 10px;
 }
@@ -24,7 +23,6 @@ li {
 .left-text {
     margin:auto;
     text-align:left;
-    /* border:1px solid #111111; */
     padding: 10px 10px 10px 10px;
 }
 h1 {
@@ -152,6 +150,8 @@ hr.solid {
     overflow: hidden;
     background-color: #333;
     border-radius:10px;
+    position:fixed;
+    width:99%;
 }
 .navbar a {
 float: left;
