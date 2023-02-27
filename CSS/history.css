@@ -53,6 +53,11 @@ button:active {
     position:fixed;
     width:99%;
 }
+.center-header {
+    position:fixed;
+    left:46%;
+    font-size:150%;
+}
 .navbar a {
 float: left;
 font-size: 16px;
@@ -60,10 +65,12 @@ color: white;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
+position:relative;
 }
 .dropdown {
 float: left;
 overflow: hidden;
+position:relative;
 }
 .dropdown .dropbtn {
 font-size: 16px;  
@@ -74,13 +81,14 @@ padding: 14px 16px;
 background-color: inherit;
 font-family: inherit;
 margin: 0;
+position:relative;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
 background-color: red;
 }
 .dropdown-content {
 display: none;
-position: absolute;
+position: fixed;
 background-color: #f9f9f9;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
