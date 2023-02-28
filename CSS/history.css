@@ -10,11 +10,15 @@ p {
     margin:auto;
     padding: 10px;
     width:50%;
+    outline:2px dashed green;
 }
 .center-div p {
     line-height:1.5;
     display:inline-block;
     vertical-align:middle;
+}
+.home-div {
+    outline:2px dashed red;
 }
 
 
