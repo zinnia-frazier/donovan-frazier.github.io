@@ -104,6 +104,16 @@ hr.solid {
     box-align:center;
     /* border:1px solid #111111; */
 }
+.flexbox-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:stretch;
+}
+.flexbox-item {
+    border:1px solid #BBB;
+    border-radius:10px;
+}
 
 /*Row div column styling below*/
 .block {
@@ -244,6 +254,9 @@ li a:hover {
 p a:hover {
     color:#ff0000;
 }
+a {
+    color:#374F53;
+}
 
 /*Collapsable header*/
 .collapsible {
@@ -267,7 +280,12 @@ p a:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    right:85px;
   }
   
   img.thumbnail:hover {
