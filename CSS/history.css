@@ -17,10 +17,28 @@ p {
     display:inline-block;
     vertical-align:middle;
 }
-.home-div {
+
+.flexbox-container {
+    margin:auto;
+    padding: 10px;
+    outline:2px dashed green;
+    display:flex;
+    justify-content:space-around;
+    align-items:stretch;
+    flex-direction:column;
+}
+.flexbox-column {
+    display:flex;
+    flex-direction:column;
+    width:50%;
+}
+.flexbox-column-container {
+    display:flex;
+    columns:3 auto;
+}
+.flexbox-item {
     outline:2px dashed red;
 }
-
 
 button, form {
     background-color: #333;
@@ -150,4 +168,14 @@ li a:hover {
 }
 p a:hover {
     color:#ff0000;
+}
+h3 a:hover {
+    color:#ff0000;
+}
+figcaption a:hover {
+    color:#ff0000;
+}
+a {
+    color:#374F53;
+    size:150%;
 }
