@@ -10,7 +10,6 @@ p {
     margin:auto;
     padding: 10px;
     width:50%;
-    outline:2px dashed green;
 }
 .center-div p {
     line-height:1.5;
@@ -21,11 +20,12 @@ p {
 .flexbox-container {
     margin:auto;
     padding: 10px;
-    outline:2px dashed green;
     display:flex;
+    margin:10px;
     justify-content:space-around;
-    align-items:stretch;
     flex-direction:column;
+    position:relative;
+    top:0px;
 }
 .flexbox-column {
     display:flex;
@@ -37,7 +37,13 @@ p {
     columns:3 auto;
 }
 .flexbox-item {
-    outline:2px dashed red;
+    border-radius:10px;
+}
+
+hr {
+    width:75%;
+    margin:auto;
+    border-top:3px solid #bbb;
 }
 
 button, form {
@@ -178,4 +184,7 @@ figcaption a:hover {
 a {
     color:#374F53;
     size:150%;
+}
+img.thumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
