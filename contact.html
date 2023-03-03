@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <title>Donovan Frazier Profile</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/profile.css">
     <link rel="stylesheet" href="CSS/contact.css">
 
+    <script src="JavaScript/toggleButton.js"></script>
     <script src="JavaScript/Header.js"></script>
 </head>
         
@@ -19,35 +21,54 @@
     <div class="content">
         <div class="header" id="myHeader">
             <div class="navbar">
-                
-                <a href="https://profile.donovanfrazier.com/index.html" class="btn"><i class="fa fa-home"></i> Home</a>
-                <a href="https://profile.donovanfrazier.com/Donovan Frazier - Coded Resume v4.pdf" target="_blank" class="btn"><i class="fa fa-file-pdf-o"></i> Resume</a>
-                <a href="https://profile.donovanfrazier.com/portfolio.html" class="btn"><i class="fa fa-clone"></i> Portfolio</a>
-                <a href="https://www.linkedin.com/in/donovan-frazier-8758b41ba/" target="_blank" class="btn"><i class="fa fa-linkedin-square"></i> Linkedin</a>
-                
+                    
+                <div class="navbar-links">
 
-                <div class="dropdown">
-                    <button class="dropbtn">More
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+                    <a href="https://profile.donovanfrazier.com/index.html" class="btn"><i class="fa fa-home"></i> Home</a>
+                    <a href="https://profile.donovanfrazier.com/Donovan Frazier - Coded Resume v4.pdf" target="_blank" class="btn"><i class="fa fa-file-pdf-o"></i> Resume</a>
+                    <a href="https://profile.donovanfrazier.com/portfolio.html" class="btn"><i class="fa fa-clone"></i> Portfolio</a>
+                    <a href="https://www.linkedin.com/in/donovan-frazier-8758b41ba/" target="_blank" class="btn"><i class="fa fa-linkedin-square"></i> Linkedin</a>
 
-                    <div class="dropdown-content">
-                        <a href="https://profile.donovanfrazier.com/contact.html"><span></span>Contact</a>
-                        <a href="https://profile.donovanfrazier.com/education.html"><span></span>Education</a>
-                        <a href="https://profile.donovanfrazier.com/about.html"><span></span>About</a>
-                        <a href="https://profile.donovanfrazier.com/awards_and_publications"><span></span>Awards and Publications</a>
-                        <a href="https://profile.donovanfrazier.com/notion.html"><span></span>Notion</a>
-                        <a href="https://profile.donovanfrazier.com/WebApps.html"><span></span>Web Apps</a>
-                        <a href="https://profile.donovanfrazier.com/updates.html"><span></span>Updates</a>
+                </div>
+
+                <div class="navbar-links">
+                    <div class="dropdown">
+                        <button class="dropbtn">More
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+
+                        <div class="dropdown-content">
+                            <a href="https://profile.donovanfrazier.com/contact.html"><span></span>Contact</a>
+                            <a href="https://profile.donovanfrazier.com/education.html"><span></span>Education</a>
+                            <a href="https://profile.donovanfrazier.com/about.html"><span></span>About</a>
+                            <a href="https://profile.donovanfrazier.com/awards_and_publications"><span></span>Awards and Publications</a>
+                            <a href="https://profile.donovanfrazier.com/notion.html"><span></span>Notion</a>
+                            <a href="https://profile.donovanfrazier.com/WebApps.html"><span></span>Web Apps</a>
+                            <a href="https://profile.donovanfrazier.com/updates.html"><span></span>Updates</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-header">
+                    <div class="navbar-links">
+                        <a href="https://profile.donovanfrazier.com/index.html">Donovan Frazier</a>
+                    </div>
+                </div>
+
+                <div style="right:2%;">
+                    <div>
+                        <button type="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton" class="btn"><i class="fa fa-moon-o"></i> Dark Mode</button>
                     </div>
                 </div>
                 
-                <div style="float:right;">
-                    <button type="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton" class="btn"><i class="fa fa-moon-o"></i> Dark Mode</button>
-                </div>
-                
-                <div class="center-header">
-                    <a href="https://profile.donovanfrazier.com/index.html"><span></span>Donovan Frazier</a>
+                <div>
+                    <button>
+                        <a href="#" class="toggle-button">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </button>
                 </div>
 
             </div>
