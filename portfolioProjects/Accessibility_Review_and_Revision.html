@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../CSS/profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="../JavaScript/toggleButton.js"></script>
+    <script src="../JavaScript/toggleButton.js" defer></script>
     <script src="../JavaScript/Header.js"></script>
 </head>
         
@@ -51,6 +51,14 @@
                         </div>
                     </div>
                 </div>
+                    
+                <button class="toggle-button">
+                    <a href="#" class="button-action">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                </button>
 
                 <div class="center-header">
                     <div class="navbar-links">
@@ -62,16 +70,6 @@
                     <div>
                         <button type="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton" class="btn"><i class="fa fa-moon-o"></i> Dark Mode</button>
                     </div>
-                </div>
-                
-                <div>
-                    <button>
-                        <a href="#" class="toggle-button">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </a>
-                    </button>
                 </div>
 
             </div>
