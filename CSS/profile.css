@@ -314,10 +314,6 @@ display: block;
 /*Footer styling below*/
 footer {
     background-color: #333;
-    left:2%;
-    right:2%;
-    bottom:2%;
-    border-radius:10px;
 }
 ul.footer {
     list-style-type: none;
