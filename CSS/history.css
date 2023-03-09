@@ -98,6 +98,11 @@ button:active {
     left:46%;
     font-size:150%;
 }
+.right-header {
+    position:fixed;
+    right:0.5%;
+}
+
 .navbar a {
 float: left;
 font-size: 16px;

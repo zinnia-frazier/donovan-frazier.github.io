@@ -184,6 +184,10 @@ hr.solid {
     left:46%;
     font-size:150%;
 }
+.right-header {
+    position:fixed;
+    right:2%;
+}
 
 .navbar-links a {
 float: left;
