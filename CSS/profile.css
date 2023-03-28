@@ -177,6 +177,7 @@ hr.solid {
     display:flex;
     justify-content:start;
     align-items:center;
+    z-index:1;
 }
     
 .center-header {

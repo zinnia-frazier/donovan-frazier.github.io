@@ -99,6 +99,7 @@ button:active {
     left:2%;
     right:2%;
     top:1%;
+    z-index:1;
 }
 .center-header {
     position:fixed;
