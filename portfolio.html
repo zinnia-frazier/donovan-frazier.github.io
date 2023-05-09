@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Google Fonts for Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Awesomefont Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Local css stylesheet -->
+    <link href="CSS/main.css" rel="stylesheet">
+
+    <!-- Darkmode button scripts-->
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/toggleButton.js"></script>
+
+    <title>Izzy Arcinue</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:75px;">
+        <a class="navbar-brand" href="index.html" style="padding-left:20px">Izzy</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" style="padding-right:10px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse bg-dark" style="height:75px;">
+       
+            <div class="container-fluid">
+                <div class="row gy-3">
+
+                    <div class="col">
+                        <div class="container">
+
+                            <ul class="navbar-nav gy-3">
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light" href="index.html" role="button">Home</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light active" href="portfolio.html" role="button">Portfolio</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light" href="about.html" role="button">About</a>
+                                </li>
+                            </ul>
+                
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="container">
+
+                            <ul class="navbar-nav gy-3">
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-info" href="https://www.linkedin.com/in/izzy-arcinue/" role="button" target="_blank">
+                                        <i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-info" href="https://www.instagram.com/izzyarchersings/" role="button" target="_blank">
+                                        <i class="fa fa-instagram"></i> Instagram</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="navbar-item">
+                                    <a class="btn btn-outline-info" href="https://twitter.com/IzzyArcherSings" role="button" target="_blank">
+                                        <i class="fa fa-twitter-square"></i> Twitter</a>
+                                </li>
+
+                                <br>
+
+                                <li class="nav-item">
+                                    <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
+                                        <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="collapse navbar-collapse bg-dark" id="nav">
+                <div class="container d-md-none">
+
+                    <ul class="navbar-nav gy-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="nav-item">
+                            <a class=" nav-link active" href="portfolio.html">Portfolio</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <br>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="https://www.linkedin.com/in/izzy-arcinue/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="https://www.instagram.com/izzyarchersings/" target="_blank">
+                                <i class="fa fa-instagram"></i> Instagram</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="navbar-item">
+                            <a class="nav-link text-info" href="https://twitter.com/IzzyArcherSings" target="_blank">
+                                <i class="fa fa-twitter-square"></i> Twitter</a>
+                        </li>
+
+                        <br>
+
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
+                                <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                        </li>
+                    </ul>
+        
+                </div>
+            </div> 
+
+        
+    </nav>
+
+    <div style="padding-top:100px"></div>
+
+    <div class="container">
+        <h1 class="text-center">Curious about what I do?</h1>
+        <p class="text-center">A glimpse of my work</p>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center">IKIRU GEAR // Digital Strategy Deck</h2>
+        <h3>Digital Marketing Bootcamp - University of Texas, Austin</h3>
+        <h5>February 2023</h5>
+        <p>Technology Used: 
+            <span class="badge rounded-pill bg-primary">Google Trends</span>
+            <span class="badge rounded-pill bg-primary">FindMyAudience</span>
+            <span class="badge rounded-pill bg-primary">Adobe Photoshop</span>
+            <span class="badge rounded-pill bg-primary">Canva</span>
+        </p>
+
+        <ul>
+            <li>
+                Wrote a value proposition for simulated clothing company, Ikiru Gear (IKG), consisting of headline, description, and benefits
+            </li>
+
+            <li>
+                Outlined three main objectives for IKG to span 24-months accompanied by specific and measurable KPIs
+            </li>
+
+            <li>
+                Created 4 personas that targeted various groups within IKG's target audience
+            </li>
+
+            <li>
+                Tracked ideal customer journey according to the marketing funnel with a focus on building 
+                awareness and retention through social media channels
+            </li>
+
+            <li>
+                Created final design of the IKG Digital Strategy Deck using a curated style guide that was consistent with IKG's "brand"
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center">Website Management</h2>
+        <h3>Innovetive Petcare</h3>
+        <h4>Contracted Marketing Intern</h4>
+        <h5>September 2022 - Present</h5>
+        <p>Technology Used: 
+            <span class="badge rounded-pill bg-primary">WordPress</span>
+            <span class="badge rounded-pill bg-primary">Adobe Photoshop</span>
+        </p>
+
+        <p>Performed website updates, development, and redesigns on over 70+ partner websites</p>
+
+        <ul>
+            <li>
+                Implemented informative and user-friendly landing pages that highlighted the clinics' services and benefits
+            </li>
+
+            <li>
+                Wrote over 50 biographies and photo-edited head shots of partner's new employees.
+            </li>
+
+            <li>
+                Built landing pages highlighting partner services (See below for Lange Animal Hospital Acupuncture Services and 
+                Springs Veterinary Care Wellness Services pages)
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center">Pet-Friendly Apartments // Research Project</h2>
+        <h3>Innovetive Petcare</h3> 
+        <h4>Contracted Marketing Intern</h4>
+        <h5>September 2022 - January 2023</h5>
+        <p>Technology Used: 
+            <span class="badge rounded-pill bg-primary">Google Maps</span>
+            <span class="badge rounded-pill bg-primary">Google Sheets</span>
+        </p>
+
+        <p>Supported lead generation efforts for mailer campaign by creating list of pet owners targeting leads that lived in apartments.</p>
+
+        <ul>
+            <li>
+                Researched locations of pet-friendly apartments within 3-5 mile radius IPC's partners
+            </li>
+
+            <li>
+                Compiled list of apartments within a 5-mile radius of eight different clinics, including details like addresses, 
+                contact information, pet policies, and exact proximity to the clinics
+            </li>
+
+            <li>
+                Saved marketing team 12 hours of work, allowing them to focus on implementing the mailer strategy
+            </li>
+
+            <li>
+                The database expands the clinics' potential client base to 212 pet-friendly apartments
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center">Meet the Coaches // LifeHikes Campaign</h2>
+        <h3>LifeHikes</h3>
+        <h5>June 2022 - August 2022</h5>
+        <p>Technology Used: 
+            <span class="badge rounded-pill bg-primary">Canva</span>
+            <span class="badge rounded-pill bg-primary">Outlook</span>
+            <span class="badge rounded-pill bg-primary">Airtable</span>
+        </p>
+
+        <p>
+            Campaign highlighting company's training services aiming to drive engagement from following and with brand on social media 
+            and reach new audiences.
+        </p>
+
+        <ul>
+            <li>
+                Organic multichannel campaign executed on websites and social media platforms to build awareness around the company's 
+                training services
+            </li>
+
+            <li>
+                Collaborated with 6 communications and sales coaches to demonstrate their qualifications to decision-makers seeking 
+                technical and motivational training for their employees
+            </li>
+
+            <li>
+                Formatted 2 graphic templates for platforms when planning multichannel social campaigns, which are still being used post-fellowship. 
+                Campaign resulted in 10% increase  in engagement by end of fellowship
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center">#TuesdayTalks <br> Own the Room Campaign</h2>
+        <h3>Own the Room at LifeHikes</h3>
+        <h4>Summer Marketing Fellow</h4>
+        <h5>June 2022 - August 2022</h5>
+        <p>Technology Used: 
+            <span class="badge rounded-pill bg-primary">Airtable</span>
+            <span class="badge rounded-pill bg-primary">Instagram</span>
+            <span class="badge rounded-pill bg-primary">Adobe Premiere Pro</span>
+        </p>
+
+        <p>
+            To help promote a communications training company on Instagram, I developed a content plan featuring 
+            motivational reels of company training sessions.
+        </p>
+
+        <ul>
+            <li>
+                Selected which highlights to edit and cropped the videos to fit the platform's requirements.
+            </li>
+
+            <li>
+                Wrote the captions for posts and created visually engaging content to highlight our services 
+            </li>
+
+            <li>
+                Work boosted the company's social media presence and grew their brand reach by about 70% increase in unique impressions
+            </li>
+        </ul>
+        
+    </div>
+
+    
+
+
+    <footer class="py-3 my-4" style="padding-bottom:0px;">
+        <div class="container" style="padding-bottom:0px;">
+
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-2 text-dark"><i class="bi bi-house-door"></i> Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link px-2 text-dark">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link px-2 text-dark">About</a>
+                </li>
+            </ul>
+
+            <p class="text-center text-dark">&copy; 2023 Izzy Arcinue</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,156 +1,507 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Artr Demo</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts for Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="CSS/experiment.css">
+    <!-- Awesomefont Free Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    
+    <!-- Local css stylesheet -->
+    <link href="CSS/main.css" rel="stylesheet">
 
-<body>
-    <!--This is the header-->
-    <div class="content" style="width:100vw;">
-        <header>
-            <img src="images/logoBackground.png" style="top:15px;left:0px;" class="background">
-            <a href="#"><img src="images/logo.png" style="z-index:2; top:20px;" class="background"></a>
+    <!-- Darkmode button scripts-->
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/toggleButton.js"></script>
 
-            <div class="container" style="padding-top:30px;">
-                    <div class="row">
-                        <div class="col-3"></div>
-                        <div class="col-7">
-                            <div class="form-floating mb-3" style="z-index:2;">
-                                <input type="search" class="form-control" id="searchBar" placeholder="Search ArtrSpace Works & Artists" style="border-radius:30px;">
-                                <label for="searchBar"><i class="fa fa-search"></i> Search ArtrSpace Works & Artists</label>
-                            </div>
+    <title>Izzy Arcinue</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:75px;">
+        <a class="navbar-brand" href="index.html" style="padding-left:20px">Izzy</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" style="padding-right:10px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse bg-dark" style="height:75px;">
+       
+            <div class="container">
+                <div class="row gy-3">
+
+                    <div class="col">
+                        <div class="container">
+
+                            <ul class="navbar-nav gy-3">
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light active" href="index.html" role="button">Home</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light" href="portfolio.html" role="button">Portfolio</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-light" href="about.html" role="button">About</a>
+                                </li>
+                            </ul>
+                
                         </div>
-                        <div class="col-2">
-                            <a class="btn btn-outline-primary" href="#" id="loginButton" style="border-radius:30px; top:15px;"> Login</a>
-                            <a class="btn btn-primary" href="#" id="signUpButton" style="border-radius:30px; top:15px;"> Sign Up</a>
+                    </div>
+                
+                    <div class="col">
+                        <div class="container">
+
+                            <ul class="navbar-nav gy-3">
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-info" href="https://www.linkedin.com/in/izzy-arcinue/" role="button" target="_blank">
+                                        <i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-info" href="https://www.instagram.com/izzyarchersings/" role="button" target="_blank">
+                                        <i class="fa fa-instagram"></i> Instagram</a>
+                                </li>
+
+                                <br>
+                
+                                <li class="navbar-item">
+                                    <a class="btn btn-outline-info" href="https://twitter.com/IzzyArcherSings" role="button" target="_blank">
+                                        <i class="fa fa-twitter-square"></i> Twitter</a>
+                                </li>
+
+                                <br>
+
+                                <li class="nav-item">
+                                    <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
+                                        <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                                </li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
-        </header>
+            </div>
+
+        </div>
+
+            <div class="collapse navbar-collapse bg-dark" id="nav">
+                <div class="container d-md-none">
+
+                    <ul class="navbar-nav gy-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="nav-item">
+                            <a class=" nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <br>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="https://www.linkedin.com/in/izzy-arcinue/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="https://www.instagram.com/izzyarchersings/" target="_blank">
+                                <i class="fa fa-instagram"></i> Instagram</a>
+                        </li>
+
+                        <br>
+        
+                        <li class="navbar-item">
+                            <a class="nav-link text-info" href="https://twitter.com/IzzyArcherSings" target="_blank">
+                                <i class="fa fa-twitter-square"></i> Twitter</a>
+                        </li>
+
+                        <br>
+
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
+                                <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                        </li>
+                    </ul>
+        
+                </div>
+            </div> 
+
+        
+    </nav>
+
+    <div style="padding-top:100px"></div>
+    <!-- Content of site -->
+
+    <div class="container">
+        <div class="row gy-3">
+
+            <div class="col-2"></div>
+
+            <div class="col position-relative">
+                <h1 class="text-center" style="font-size:5rem;">Izzy Arcinue</h1>
+            </div>
+
+            <div class="col">
+                <h1>Welcome!</h1>
+                <p>
+                    I'm a digital coordinator with professional and academic experience from several marketing internships and student leadership.
+                </p>
+
+                <p>
+                    My skills include social media coordinating, video editing, and content management.
+                </p>
+
+                <p>
+                    My passions include game development, competitive esports, and content creation.
+                </p>
+
+                <div class="d-grid mx-auto col-4">
+                    <a href="portfolio.html" class="btn btn-outline-dark" role="button">My Work</a>
+                </div>
+            </div>
+            
+            <div class="col-2"></div>
+
+        </div>
     </div>
 
     <div class="container">
 
-        <div class="screen" style="padding-top:150px;">
+        <h1>Projects</h1>
 
-            <div class="row">
-                <div class="col-10">
-                    <h1>Recently Completed Commissions</h1>
+        <div id="carouselControl" class="carousel slide carousel-dark" data-bs-ride="carousel">
+
+            <!-- Indicators (bootstrap suggests <ol> but w3schools suggests <button>) -->
+            <div class="carousel-indicators">
+                <button data-bs-target="#carouselControl" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#carouselControl" data-bs-slide-to="1"></button>
+                <button data-bs-target="#carouselControl" data-bs-slide-to="2"></button>
+                <button data-bs-target="#carouselControl" data-bs-slide-to="3"></button>
+                <button data-bs-target="#carouselControl" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- Slides of the carousel-->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/carousel 1.jpg" alt="first slide">
+                    <div class="carousel-caption d-none d-md-block bg-light rounded">
+                        <h3>Ikiru Gear Digital Strategies Deck</h3>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <a href="#" style="top:20px">Learn More</a>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel 2.jpg" alt="second slide">
+                    <div class="carousel-caption d-none d-md-block bg-light rounded">
+                        <h3>Meet the Coaches - LifeHikes Campaign</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel 3.jpg" alt="third slide">
+                    <div class="carousel-caption d-none d-md-block bg-light rounded">
+                        <h3>#Tuesday Talks - Own the Room Campaign</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel 4.jpg" alt="fourth slide">
+                    <div class="carousel-caption d-none d-md-block bg-light rounded">
+                        <h3>Website Management</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/carousel 5.jpg" alt="fifth slide">
+                    <div class="carousel-caption d-none d-md-block bg-light rounded">
+                        <h3>Girls' Space</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls (w3school suggests <button> but bootstrap 5 suggests <a>) -->
+            <button class="carousel-control-prev bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Experiences</h1>
+
+        <div class="row gy-3">
+            <div class="col position-relative">
+                <div class="card border-dark overflow-auto" style="padding:10px; height:450px; border-radius:20px;">
+                    <img class="card-img-top mx-auto" src="images/IPC-Logo-small2.png" alt="Innovetive Petcare logo" style="width:200px; padding-top:10px;">
+
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Marketing Intern</h3>
+                        <p class="card-text text-center">Sep 2022 - Present | <b>Austin, TX</b></p>
+                        <p class="card-text">
+                            Supported marketing and HR team at petcare acquisition company, Innovetive Petcare, in content and social media 
+                            account management; wrote email templates; and built pages for over 70 unique websites.
+                        </p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="images/placeholder 1.png" /></a>
-                        <div class="card-body">
-                            <h3 class="card-title">Artr Crab</h3>
-                            <span class="card-subtitle">Tomato Infused</span>
-                            <div class="card-text">
-                                Placeholder date
-                            </div>
-                        </div>
+
+            <div class="col">
+                <div class="card border-dark overflow-auto" style="padding:10px; height:450px; border-radius:20px;">
+                    <img class="card-img-top mx-auto" src="images/OTR-Powered-by-LifeHikes-logo-Horizontal.png" alt="LifeHikes logo" style="width:250px; padding-top:10px;">
+
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Summer Marketing Fellow</h3>
+                        <p class="card-text text-center">Jun 2022 - Aug 2022 | <b>Montclair, NJ</b></p>
+                        <p class="card-text">
+                            Produced social media marketing and content marketing for global communications training company, LifeHikes and 
+                            their program, Own The Room. Edited and published their first short-form video content through accounts on 
+                            Twitter, Instagram, Facebook, and LinkedIn.
+                        </p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="images/placeholder 2.png" /></a>
-                        <div class="card-body">
-                            <h3 class="card-title">Artr Crab</h3>
-                            <span class="card-subtitle">Yeah Selfie Sketch</span>
-                            <div class="card-text">
-                                Placeholder date
-                            </div>
-                        </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-dark overflow-auto" style="padding:10px; height:450px; border-radius:20px;">
+                    <div class="bg-dark rounded mx-auto" style="padding:10px;">
+                        <img class="card-img-top mx-auto" src="images/Gamespawn Logo.svg" alt="Gamespawn logo" style="width:250px; padding-top:10px;">
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="images/placeholder 3.png" /></a>
-                        <div class="card-body">
-                            <h3 class="card-title">Artr Crab</h3>
-                            <span class="card-subtitle">You Really? Actually Tho?</span>
-                            <div class="card-text">
-                                Placeholder date
-                            </div>
-                        </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Vice President</h3>
+                        <p class="card-text text-center">May 2021 - Jun 2022 | <b>Riverside, CA</b></p>
+                        <p class="card-text">
+                            Officer for game development organization, Gamespawn at University of California, Riverside. 
+                            Performed administrative duties, organized responsibilities for all officer board, and coordinated events.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    
+
+        <br>
+
+        <div class="d-grid mx-auto col-4">
+            <a class="btn btn-outline-dark" role="button" href="portfolio.html">See Full Portfolio</a>
+        </div>
+
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Academic Background</h1>
+
+        <div class="card border-dark">
+            <div class="row gy-3 text-center" style="padding:10px;">
+                <div class="col">
+                    <img src="images/University_of_Texas_at_Austin_seal.svg" alt="University of Texas Austin seal" style="width:100px;" class="mx-auto">
+                </div>
+                <div class="col-lg-4">
+                    <h3>University of Texas, <br> Austin</h3>
+                </div>
+                <div class="col">
+                    <p>Digital Marketing Bootcamp</p>
+                </div>
+                <div class="col">
+                    <p>Austin, Texas</p>
+                </div>
+                <div class="col">
+                    <p>Feb 2023 - Present</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card border-dark">
+            <div class="row gy-3 text-center" style="padding:10px;">
+                <div class="col">
+                    <img src="images/UC_Riverside_seal.svg" alt="University of California Riverside seal" style="width:100px;" class="mx-auto">
+                </div>
+                <div class="col-lg-4">
+                    <h3>University of California, <br> Riverside</h3>
+                </div>
+                <div class="col">
+                    <p>Bachelor's of Arts <br> in Digital Production &amp Film</p>
+                </div>
+                <div class="col">
+                    <p>Riverside, California</p>
+                </div>
+                <div class="col">
+                    <p>Sep 2018 - Jun 2022</p>
+                </div>
+            </div>
+        </div>
         
-        <div style="padding-top:100px;"></div>
-    
-    <div class="container-fluid">
-        <footer style="position:relative; width:100vw;">
-            <div class="background" style="position:absolute; width:100%; left:0; bottom:0; z-index:-1;">
-                <img src="images/footerBackground 1.png" class="background" style="width:100%; bottom:0; position:absolute;">
-                <img src="images/footerBackground 2.png" class="background" style="width:100%; bottom:0; position:absolute;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Skills</h1>
+
+        <div class="row gy-3">            
+            <div class="col">
+                <h3>Video Editing &amp Production</h3>
+                <ul>
+                    <li>Video Editing</li>
+                    <li>Digital production</li>
+                    <li>Creative Writing</li>
+                </ul>
             </div>
 
-            <div style="z-index:2;">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col">
-                        <p class="text-center">
-                            <a href="#">Support</a>
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="text-center">
-                            <a href="#">Help</a>
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="text-center">
-                            <a href="#">About</a>
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="text-center">
-                            <a href="#">Artists</a>
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="text-center">
-                            <a href="#">Community</a>
-                        </p>
-                    </div>
-                    <div class="col"></div>
-                </div>
+            <div class="col">
+                <h3>Digital Coordination</h3>
+                <ul>
+                    <li>Content management</li>
+                    <li>Asana</li>
+                    <li>WordPress</li>
+                    <li>Mailchimp</li>
+                    <li>Hootsuite</li>
+                </ul>
+            </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                        <a href="#"><img src="images/logo.png" class="rounded mx-auto d-block"></a>
-                        <div class="row rows-cols-2 g-0">
-                            <div class="col">
-                                <p class="text-center">
-                                    <a href="#">Privacy</a> | <a href="#">Terms and Services</a>
-                                </p>
-                            </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 class="text-center">Contact</h1>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="name" id="name" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control">
                         </div>
                     </div>
-                    <div class="col-4"></div>
-                </div>
+
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" id="subject" class="form-control">
+
+                    <label for="body" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="3"></textarea>
+
+                    <br> 
+                    
+                    <div class="row">
+                        <div class="d-grid mx-auto col-4">
+                            <button class="btn btn-dark">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </footer>
-        
+            <div class="col"></div>
+        </div>
     </div>
-</body>
+
+        
+    <footer class="py-3 my-4" style="padding-bottom:0px;">
+        <div class="container" style="padding-bottom:0px;">
+
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-2 text-dark"><i class="bi bi-house-door"></i> Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link px-2 text-dark">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link px-2 text-dark">About</a>
+                </li>
+            </ul>
+
+            <p class="text-center text-dark">&copy; 2023 Izzy Arcinue</p>
+        </div>
+    </footer>
+        
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
