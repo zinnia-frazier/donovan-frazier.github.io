@@ -3,6 +3,11 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+
+    <!-- Favicon and title -->
+    <title>Izzy Arcinue</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -22,15 +27,15 @@
     <!-- Darkmode button scripts-->
     <script src="javascript/darkMode.js"></script>
     <script src="javascript/toggleButton.js"></script>
-
-    <title>Izzy Arcinue</title>
+    <script src="javascript/activeButton.js"></script>
+    <script src="javascript/darkModePersistent.js"></script>
   </head>
 
   <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:75px;">
-        <a class="navbar-brand" href="index.html" style="padding-left:20px">Izzy</a>
+        <a class="navbar-brand" href="index.html" style="padding-left:20px">Izzy A</a>
 
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" style="padding-right:10px;">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +43,7 @@
 
         <div class="collapse navbar-collapse bg-dark" style="height:75px;">
        
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row gy-3">
 
                     <div class="col">
@@ -64,7 +69,9 @@
                 
                         </div>
                     </div>
-                
+
+                    <div class="col"></div>
+
                     <div class="col">
                         <div class="container">
 
@@ -74,24 +81,8 @@
                                         <i class="fa fa-linkedin-square"></i> LinkedIn</a>
                                 </li>
 
-                                <br>
-                
                                 <li class="nav-item">
-                                    <a class="btn btn-outline-info" href="https://www.instagram.com/izzyarchersings/" role="button" target="_blank">
-                                        <i class="fa fa-instagram"></i> Instagram</a>
-                                </li>
-
-                                <br>
-                
-                                <li class="navbar-item">
-                                    <a class="btn btn-outline-info" href="https://twitter.com/IzzyArcherSings" role="button" target="_blank">
-                                        <i class="fa fa-twitter-square"></i> Twitter</a>
-                                </li>
-
-                                <br>
-
-                                <li class="nav-item">
-                                    <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
+                                    <button class="btn btn-outline-light mode-button" role="button" onclick="toggleDarkMode();toggleButtonStyle();activeButton();" id="modeButton">
                                         <i class="fa fa-moon-o"></i> Dark Mode</button> 
                                 </li>
                             </ul>
@@ -103,74 +94,147 @@
 
         </div>
 
-            <div class="collapse navbar-collapse bg-dark" id="nav">
-                <div class="container d-md-none">
+        <div class="collapse navbar-collapse bg-dark position-fixed" id="nav" style="top:0;">
+            <div class="container d-md-none">
 
-                    <ul class="navbar-nav gy-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
+                <ul class="navbar-nav gy-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
 
-                        <br>
-        
-                        <li class="nav-item">
-                            <a class=" nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
+                    <br>
+    
+                    <li class="nav-item">
+                        <a class=" nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
 
-                        <br>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
+                    <br>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
 
-                        <br>
+                    <br>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-info" href="https://www.linkedin.com/in/izzy-arcinue/" target="_blank">
-                                <i class="fa fa-linkedin-square"></i> LinkedIn</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="https://www.linkedin.com/in/izzy-arcinue/" target="_blank">
+                            <i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                    </li>
 
-                        <br>
-        
-                        <li class="nav-item">
-                            <a class="nav-link text-info" href="https://www.instagram.com/izzyarchersings/" target="_blank">
-                                <i class="fa fa-instagram"></i> Instagram</a>
-                        </li>
+                    <br>
 
-                        <br>
-        
-                        <li class="navbar-item">
-                            <a class="nav-link text-info" href="https://twitter.com/IzzyArcherSings" target="_blank">
-                                <i class="fa fa-twitter-square"></i> Twitter</a>
-                        </li>
-
-                        <br>
-
-                        <li class="nav-item">
-                            <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
-                                <i class="fa fa-moon-o"></i> Dark Mode</button> 
-                        </li>
-                    </ul>
-        
-                </div>
-            </div> 
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
+                            <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                    </li>
+                </ul>
+    
+            </div>
+        </div> 
 
         
     </nav>
 
-    <div style="padding-top:100px"></div>
+    <div style="padding-top:75px"></div>
     <!-- Content of site -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center" style="font-size:5rem;">Izzy Arcinue</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Projects</h1>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col"></div>
+
+                <div class="col-md-8">
+
+                    <div id="carouselControl" class="carousel slide carousel-dark" data-bs-ride="carousel">
+
+                        <!-- Indicators (bootstrap suggests <ol> but w3schools suggests <button>) -->
+                        <div class="carousel-indicators">
+                            <button data-bs-target="#carouselControl" data-bs-slide-to="0" class="active"></button>
+                            <button data-bs-target="#carouselControl" data-bs-slide-to="1"></button>
+                            <button data-bs-target="#carouselControl" data-bs-slide-to="2"></button>
+                            <button data-bs-target="#carouselControl" data-bs-slide-to="3"></button>
+                            <button data-bs-target="#carouselControl" data-bs-slide-to="4"></button>
+                        </div>
+
+                        <!-- Slides of the carousel-->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/carousel 1.jpg" alt="first slide">
+                                <div class="carousel-caption d-none d-md-block bg-light rounded">
+                                    <h3>Ikiru Gear Digital Strategies Deck</h3>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/carousel 2.jpg" alt="second slide">
+                                <div class="carousel-caption d-none d-md-block bg-light rounded">
+                                    <h3>Meet the Coaches - LifeHikes Campaign</h3>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/carousel 3.jpg" alt="third slide">
+                                <div class="carousel-caption d-none d-md-block bg-light rounded">
+                                    <h3>#Tuesday Talks - Own the Room Campaign</h3>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/carousel 4.jpg" alt="fourth slide">
+                                <div class="carousel-caption d-none d-md-block bg-light rounded">
+                                    <h3>Website Management</h3>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/carousel 5.jpg" alt="fifth slide">
+                                <div class="carousel-caption d-none d-md-block bg-light rounded">
+                                    <h3>Girls' Space</h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Controls (w3school suggests <button> but bootstrap 5 suggests <a>) -->
+                        <button class="carousel-control-prev bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                
+                </div>
+
+
+            <div class="col"></div>
+
+        </div>
+
+    </div>
 
     <div class="container">
         <div class="row gy-3">
 
-            <div class="col-2"></div>
+            <div class="col"></div>
 
-            <div class="col position-relative">
-                <h1 class="text-center" style="font-size:5rem;">Izzy Arcinue</h1>
-            </div>
-
-            <div class="col">
+            <div class="col-8">
                 <h1>Welcome!</h1>
                 <p>
                     I'm a digital coordinator with professional and academic experience from several marketing internships and student leadership.
@@ -180,86 +244,14 @@
                     My skills include social media coordinating, video editing, and content management.
                 </p>
 
-                <p>
-                    My passions include game development, competitive esports, and content creation.
-                </p>
-
                 <div class="d-grid mx-auto col-4">
                     <a href="portfolio.html" class="btn btn-outline-dark" role="button">My Work</a>
                 </div>
             </div>
             
-            <div class="col-2"></div>
+            <div class="col"></div>
 
         </div>
-    </div>
-
-    <div class="container">
-
-        <h1>Projects</h1>
-
-        <div id="carouselControl" class="carousel slide carousel-dark" data-bs-ride="carousel">
-
-            <!-- Indicators (bootstrap suggests <ol> but w3schools suggests <button>) -->
-            <div class="carousel-indicators">
-                <button data-bs-target="#carouselControl" data-bs-slide-to="0" class="active"></button>
-                <button data-bs-target="#carouselControl" data-bs-slide-to="1"></button>
-                <button data-bs-target="#carouselControl" data-bs-slide-to="2"></button>
-                <button data-bs-target="#carouselControl" data-bs-slide-to="3"></button>
-                <button data-bs-target="#carouselControl" data-bs-slide-to="4"></button>
-            </div>
-
-            <!-- Slides of the carousel-->
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/carousel 1.jpg" alt="first slide">
-                    <div class="carousel-caption d-none d-md-block bg-light rounded">
-                        <h3>Ikiru Gear Digital Strategies Deck</h3>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/carousel 2.jpg" alt="second slide">
-                    <div class="carousel-caption d-none d-md-block bg-light rounded">
-                        <h3>Meet the Coaches - LifeHikes Campaign</h3>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/carousel 3.jpg" alt="third slide">
-                    <div class="carousel-caption d-none d-md-block bg-light rounded">
-                        <h3>#Tuesday Talks - Own the Room Campaign</h3>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/carousel 4.jpg" alt="fourth slide">
-                    <div class="carousel-caption d-none d-md-block bg-light rounded">
-                        <h3>Website Management</h3>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/carousel 5.jpg" alt="fifth slide">
-                    <div class="carousel-caption d-none d-md-block bg-light rounded">
-                        <h3>Girls' Space</h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Controls (w3school suggests <button> but bootstrap 5 suggests <a>) -->
-            <button class="carousel-control-prev bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
-        </div>
-
     </div>
 
     <div class="container">
@@ -273,6 +265,8 @@
     <div class="container">
 
         <h1>Experiences</h1>
+
+        <br>
 
         <div class="row gy-3">
             <div class="col position-relative">
@@ -344,8 +338,10 @@
 
         <h1>Academic Background</h1>
 
+        <br>
+
         <div class="card border-dark">
-            <div class="row gy-3 text-center" style="padding:10px;">
+            <div class="row gy-3 text-center align-items-center" style="padding:20px;">
                 <div class="col">
                     <img src="images/University_of_Texas_at_Austin_seal.svg" alt="University of Texas Austin seal" style="width:100px;" class="mx-auto">
                 </div>
@@ -367,7 +363,7 @@
         <br>
 
         <div class="card border-dark">
-            <div class="row gy-3 text-center" style="padding:10px;">
+            <div class="row gy-3 text-center align-items-center" style="padding:20px;">
                 <div class="col">
                     <img src="images/UC_Riverside_seal.svg" alt="University of California Riverside seal" style="width:100px;" class="mx-auto">
                 </div>
@@ -375,7 +371,7 @@
                     <h3>University of California, <br> Riverside</h3>
                 </div>
                 <div class="col">
-                    <p>Bachelor's of Arts <br> in Digital Production &amp Film</p>
+                    <p><b>Bachelor's of Arts</b> <br> in Digital Production &amp Film</p>
                 </div>
                 <div class="col">
                     <p>Riverside, California</p>
@@ -396,29 +392,27 @@
     </div>
 
     <div class="container">
-
-        <h1>Skills</h1>
-
-        <div class="row gy-3">            
+        <div class="row gy-3">
+            <div class="col"></div>
+            
             <div class="col">
-                <h3>Video Editing &amp Production</h3>
-                <ul>
-                    <li>Video Editing</li>
-                    <li>Digital production</li>
-                    <li>Creative Writing</li>
-                </ul>
+                <h1>Skills</h1>
             </div>
 
             <div class="col">
-                <h3>Digital Coordination</h3>
                 <ul>
                     <li>Content management</li>
                     <li>Asana</li>
                     <li>WordPress</li>
                     <li>Mailchimp</li>
                     <li>Hootsuite</li>
+                    <li>Video Editing</li>
+                    <li>Digital production</li>
+                    <li>Creative Writing</li>
                 </ul>
             </div>
+
+            <div class="col"></div>
         </div>
 
     </div>
@@ -475,19 +469,19 @@
 
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link px-2 text-dark"><i class="bi bi-house-door"></i> Home</a>
+                    <a href="index.html" class="nav-link px-2">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link px-2 text-dark">Portfolio</a>
+                    <a href="portfolio.html" class="nav-link px-2">Portfolio</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link px-2 text-dark">About</a>
+                    <a href="about.html" class="nav-link px-2">About</a>
                 </li>
             </ul>
 
-            <p class="text-center text-dark">&copy; 2023 Izzy Arcinue</p>
+            <p class="text-center">&copy; 2023 Izzy Arcinue</p>
         </div>
     </footer>
         

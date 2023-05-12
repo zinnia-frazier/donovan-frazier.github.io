@@ -1,5 +1,13 @@
 body {
     font-family: 'Poppins', sans-serif;
+    color:black;
+}
+
+.nav-link {
+    color:black;
+}
+.nav-link:hover {
+    color:gray;
 }
 
 .navbar-nav > li {
@@ -21,6 +29,11 @@ body {
     background-color:black;
     color:white;
 
+    .mode-button {
+        background-color:white;
+        color:black;
+    }
+
     .card {
         background-color:black;
     }
@@ -31,8 +44,41 @@ body {
         outline-color:white;
     }
 
-    .btn {
-        color:#9DA5AF;
+    .btn-outline-secondary {
+        color:white;
+        border:1px solid #9DA5AF;
+        outline-style:solid;
+        outline-color:#9DA5AF;
+    }
+
+    .btn-outline-dark {
+        color:white;
+        border:1px solid #9DA5AF;
+        outline-style:solid;
+        outline-color:#9DA5AF;
+    }
+
+    .btn-dark {
+        color:white;
+        border:1px solid #9DA5AF;
+        outline-style:solid;
+        outline-color:#9DA5AF;
+        background-color:black;
+    }
+
+    .btn-outline-light:hover {
+        color:black;
+    }
+
+    .btn.active {
+        color:black;
+    }
+
+    .nav-link {
+        color:white;
+    }
+    .nav-link:hover {
+        color:gray;
     }
 }
 .dark-mode {
