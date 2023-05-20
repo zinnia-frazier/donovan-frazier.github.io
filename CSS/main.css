@@ -1,100 +1,58 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    color:black;
+    margin:0;
 }
 
-.nav-link {
-    color:black;
+a {
+    color:#CBE9BF;
 }
-.nav-link:hover {
-    color:gray;
-}
-.gray-link {
-    color:black;
-}
-.gray-link:hover {
-    color:gray;
+a:hover {
+    color:#65BE41;
 }
 
-.navbar-nav > li {
-    padding-left:5px;
-    padding-right:5px;
+.title {
+    font-size:5rem;
+    color:#CBE9BF;
+    text-shadow:0 0 5px black;
+    z-index:1;
 }
 
-.container {
-    padding-top:20px;
-    padding-bottom:20px;
+/* Parallax background */
+
+#grad1 {
+    background-image: linear-gradient(to bottom, black, #3e3b2f, #edd0a2, white);
 }
-/*
-.card {
-    background-color:#F6EFE4;
+#grad2 {
+    background-image:radial-gradient(circle, rgba(255,255,255,1), rgba(255,255,255,0));
+    border-radius:50%;
+    size:200%;
 }
-*/
 
-.dark-mode {
-    background-color:black;
-    color:white;
+.circle {
+    height:500px;
+    width:500px;
+    background-color:yellow;
+    border-radius:50%;
 
-    .mode-button {
-        background-color:white;
-        color:black;
-    }
+    z-index:-1;
+    position:absolute;
+    top:60%;
+    left:50%;
 
-    .card {
-        background-color:black;
-    }
-
-    .border-dark {
-        border:2px solid white;
-        outline-style:solid;
-        outline-color:white;
-    }
-
-    .btn-outline-secondary {
-        color:white;
-        border:1px solid #9DA5AF;
-        outline-style:solid;
-        outline-color:#9DA5AF;
-    }
-
-    .btn-outline-dark {
-        color:white;
-        border:1px solid #9DA5AF;
-        outline-style:solid;
-        outline-color:#9DA5AF;
-    }
-
-    .btn-dark {
-        color:white;
-        border:1px solid #9DA5AF;
-        outline-style:solid;
-        outline-color:#9DA5AF;
-        background-color:black;
-    }
-
-    .btn-outline-light:hover {
-        color:black;
-    }
-
-    .btn.active {
-        color:black;
-    }
-
-    .gray-link {
-        color:white;
-    }
-    .gray-link:hover {
-        color:gray;
-    }
-
-    .nav-link {
-        color:white;
-    }
-    .nav-link:hover {
-        color:gray;
-    }
+    overflow:hidden;
 }
-.dark-mode {
-    animation-name:text-fade;
-    animation-duration:0.5s;
+.moon {
+    position:absolute; 
+    top:10%;
+    left:90%;
+}
+.background,.foreground {
+    position:absolute;
+}
+
+.background-image {
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    overflow:hidden;
 }

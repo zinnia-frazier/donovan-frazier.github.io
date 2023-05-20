@@ -1,479 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+
+<!-- head tag holds all the meta data of the web page like css links-->
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon and title -->
-    <title>Izzy Arcinue</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- title of the website appears in the tab on the broswer -->
+    <title>Dawn Designs</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The icon the appears on a tab next to a title -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
-    <!-- Bootstrap CSS -->
+    <!--Bootstrap 5 styling-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <!-- Google Fonts for Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Awesomefont Free Icons -->
+    <!--Styling in the stylesheet and javascript files sourced below-->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+    <!-- links to any outside icons or css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- Local css stylesheet -->
-    <link href="CSS/main.css" rel="stylesheet">
 
-    <!-- Darkmode button scripts-->
-    <script src="javascript/darkMode.js"></script>
-    <script src="javascript/toggleButton.js"></script>
-    <script src="javascript/activeButton.js"></script>
-    <script src="javascript/darkModePersistent.js"></script>
-  </head>
+    <!-- simple javascript can be placed here -->
+    <script src="JavaScript/Header.js"></script>
+    <script src="JavaScript/toggleButton.js"></script>
+</head>
+        
+<body>
 
-  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="z-index:1;">
+        <div class="container">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:75px;">
-        <a class="navbar-brand" href="index.html" style="padding-left:20px">Izzy A</a>
+            <a class="navbar-brand" href="index.html" style="color:#CBE9BF">
+                Dawn Designs
+            </a>
 
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation" style="padding-right:10px;">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse bg-dark" style="height:75px;">
-       
-            <div class="container-fluid">
-                <div class="row gy-3">
-
-                    <div class="col">
-                        <div class="container">
-
-                            <ul class="navbar-nav gy-3">
-                                <li class="nav-item">
-                                    <a class="btn btn-outline-light active" href="index.html" role="button">Home</a>
-                                </li>
-
-                                <br>
-                
-                                <li class="nav-item">
-                                    <a class="btn btn-outline-light" href="portfolio.html" role="button">Portfolio</a>
-                                </li>
-
-                                <br>
-                
-                                <li class="nav-item">
-                                    <a class="btn btn-outline-light" href="about.html" role="button">About</a>
-                                </li>
-                            </ul>
-                
-                        </div>
-                    </div>
-
-                    <div class="col"></div>
-
-                    <div class="col">
-                        <div class="container">
-
-                            <ul class="navbar-nav gy-3">
-                                <li class="nav-item">
-                                    <a class="btn btn-outline-info" href="https://www.linkedin.com/in/izzy-arcinue/" role="button" target="_blank">
-                                        <i class="fa fa-linkedin-square"></i> LinkedIn</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <button class="btn btn-outline-light mode-button" role="button" onclick="toggleDarkMode();toggleButtonStyle();activeButton();" id="modeButton">
-                                        <i class="fa fa-moon-o"></i> Dark Mode</button> 
-                                </li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="collapse navbar-collapse bg-dark position-fixed" id="nav" style="top:0;">
-            <div class="container d-md-none">
-
-                <ul class="navbar-nav gy-3">
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
 
-                    <br>
-    
                     <li class="nav-item">
-                        <a class=" nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
 
-                    <br>
-    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
 
-                    <br>
-
                     <li class="nav-item">
-                        <a class="nav-link text-info" href="https://www.linkedin.com/in/izzy-arcinue/" target="_blank">
-                            <i class="fa fa-linkedin-square"></i> LinkedIn</a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light" role="button" onclick="toggleDarkMode();toggleButtonStyle()" id="modeButton">
-                            <i class="fa fa-moon-o"></i> Dark Mode</button> 
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
-    
             </div>
-        </div> 
+        </div>
 
-        
     </nav>
+    
+    <div style="height:250vh; position:relative; z-index:1;" id="grad1">
 
-    <div style="padding-top:75px"></div>
-    <!-- Content of site -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="text-center" style="font-size:5rem;">Izzy Arcinue</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col"></div>
-
-                <div class="col-md-8">
-
-                    <div id="carouselControl" class="carousel slide carousel-dark" data-bs-ride="carousel">
-
-                        <!-- Indicators (bootstrap suggests <ol> but w3schools suggests <button>) -->
-                        <div class="carousel-indicators">
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="0" class="active"></button>
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="1"></button>
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="2"></button>
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="3"></button>
-                            <button data-bs-target="#carouselControl" data-bs-slide-to="4"></button>
-                        </div>
-
-                        <!-- Slides of the carousel-->
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/carousel 1.jpg" alt="first slide">
-                                <div class="carousel-caption d-none d-md-block bg-light rounded">
-                                    <h3>Ikiru Gear Digital Strategies Deck</h3>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel 2.jpg" alt="second slide">
-                                <div class="carousel-caption d-none d-md-block bg-light rounded">
-                                    <h3>Meet the Coaches - LifeHikes Campaign</h3>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel 3.jpg" alt="third slide">
-                                <div class="carousel-caption d-none d-md-block bg-light rounded">
-                                    <h3>#Tuesday Talks - Own the Room Campaign</h3>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel 4.jpg" alt="fourth slide">
-                                <div class="carousel-caption d-none d-md-block bg-light rounded">
-                                    <h3>Website Management</h3>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/carousel 5.jpg" alt="fifth slide">
-                                <div class="carousel-caption d-none d-md-block bg-light rounded">
-                                    <h3>Girls' Space</h3>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Controls (w3school suggests <button> but bootstrap 5 suggests <a>) -->
-                        <button class="carousel-control-prev bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </button>
-                        <button class="carousel-control-next bg-light rounded" type="button" data-bs-target="#carouselControl" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </button>
-                    </div>
-                
-                </div>
+        <!-- <img src="images/moon.png" class="background-image moon" style="width:150px;" id="grad2"> -->
 
 
-            <div class="col"></div>
+        <img src="images/Mountains-Silhouette.svg" class="background-image background">
+        <img src="images/treeline.svg" class="background-image foreground">
 
-        </div>
+        <h1 class="text-center position-relative title" style="top:300px;">Dawn Designs</h1>
+        <h2 class="text-center position-relative title" style="top:1000px; z-index:3;">Innovative and responsive designs</h2>
 
-    </div>
 
-    <div class="container">
-        <div class="row gy-3">
 
-            <div class="col"></div>
 
-            <div class="col-8">
-                <h1>Welcome!</h1>
-                <p>
-                    I'm a digital coordinator with professional and academic experience from several marketing internships and student leadership.
-                </p>
+        <div class="circle"></div>
 
-                <p>
-                    My skills include social media coordinating, video editing, and content management.
-                </p>
-
-                <div class="d-grid mx-auto col-4">
-                    <a href="portfolio.html" class="btn btn-outline-dark" role="button">My Work</a>
-                </div>
-            </div>
-            
-            <div class="col"></div>
-
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-
-        <h1>Experiences</h1>
-
-        <br>
-
-        <div class="row gy-3">
-            <div class="col position-relative">
-                <div class="card border-dark overflow-auto" style="padding:10px; height:450px; border-radius:20px;">
-                    <img class="card-img-top mx-auto" src="images/IPC-Logo-small2.png" alt="Innovetive Petcare logo" style="width:200px; padding-top:10px;">
-
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Marketing Intern</h3>
-                        <p class="card-text text-center">Sep 2022 - Present | <b>Austin, TX</b></p>
-                        <p class="card-text">
-                            Supported marketing and HR team at petcare acquisition company, Innovetive Petcare, in content and social media 
-                            account management; wrote email templates; and built pages for over 70 unique websites.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card border-dark overflow-auto" style="padding:10px; height:450px; border-radius:20px;">
-                    <img class="card-img-top mx-auto" src="images/OTR-Powered-by-LifeHikes-logo-Horizontal.png" alt="LifeHikes logo" style="width:250px; padding-top:10px;">
-
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Summer Marketing Fellow</h3>
-                        <p class="card-text text-center">Jun 2022 - Aug 2022 | <b>Montclair, NJ</b></p>
-                        <p class="card-text">
-                            Produced social media marketing and content marketing for global communications training company, LifeHikes and 
-                            their program, Own The Room. Edited and published their first short-form video content through accounts on 
-                            Twitter, Instagram, Facebook, and LinkedIn.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card border-dark overflow-auto" style="padding:10px; height:450px; border-radius:20px;">
-                    <div class="bg-dark rounded mx-auto" style="padding:10px;">
-                        <img class="card-img-top mx-auto" src="images/Gamespawn Logo.svg" alt="Gamespawn logo" style="width:250px; padding-top:10px;">
-                    </div>
-
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Vice President</h3>
-                        <p class="card-text text-center">May 2021 - Jun 2022 | <b>Riverside, CA</b></p>
-                        <p class="card-text">
-                            Officer for game development organization, Gamespawn at University of California, Riverside. 
-                            Performed administrative duties, organized responsibilities for all officer board, and coordinated events.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="d-grid mx-auto col-4">
-            <a class="btn btn-outline-dark" role="button" href="portfolio.html">See Full Portfolio</a>
-        </div>
-
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-
-        <h1>Academic Background</h1>
-
-        <br>
-
-        <div class="card border-dark">
-            <div class="row gy-3 text-center align-items-center" style="padding:20px;">
-                <div class="col">
-                    <img src="images/University_of_Texas_at_Austin_seal.svg" alt="University of Texas Austin seal" style="width:100px;" class="mx-auto">
-                </div>
-                <div class="col-lg-4">
-                    <h3>University of Texas, <br> Austin</h3>
-                </div>
-                <div class="col">
-                    <p>Digital Marketing Bootcamp</p>
-                </div>
-                <div class="col">
-                    <p>Austin, Texas</p>
-                </div>
-                <div class="col">
-                    <p>Feb 2023 - Present</p>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="card border-dark">
-            <div class="row gy-3 text-center align-items-center" style="padding:20px;">
-                <div class="col">
-                    <img src="images/UC_Riverside_seal.svg" alt="University of California Riverside seal" style="width:100px;" class="mx-auto">
-                </div>
-                <div class="col-lg-4">
-                    <h3>University of California, <br> Riverside</h3>
-                </div>
-                <div class="col">
-                    <p><b>Bachelor's of Arts</b> <br> in Digital Production &amp Film</p>
-                </div>
-                <div class="col">
-                    <p>Riverside, California</p>
-                </div>
-                <div class="col">
-                    <p>Sep 2018 - Jun 2022</p>
-                </div>
-            </div>
-        </div>
         
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-        </div>
     </div>
-
+    
+    
     <div class="container">
-        <div class="row gy-3">
-            <div class="col"></div>
-            
-            <div class="col">
-                <h1>Skills</h1>
-            </div>
-
-            <div class="col">
-                <ul>
-                    <li>Content management</li>
-                    <li>Asana</li>
-                    <li>WordPress</li>
-                    <li>Mailchimp</li>
-                    <li>Hootsuite</li>
-                    <li>Video Editing</li>
-                    <li>Digital production</li>
-                    <li>Creative Writing</li>
-                </ul>
-            </div>
-
-            <div class="col"></div>
-        </div>
-
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-sm-8 col-md-4">
-                <div class="card border-dark" style="bottom:0px; right:10px;">
-                    <div class="card-header">
-                        <h3>Contact</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>The best way to contact me is through <a class="gray-link" href="https://www.linkedin.com/in/izzy-arcinue/" target="_blank">LinkedIn</a> or by <a class="gray-link" href="mailto:izcarci@gmail.com"><i class="fa fa-envelope"></i> email</a>.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col"></div>
-        </div>
-        
+        <p>
+            A
+        </p>
     </div>
 
     
-
         
-    <footer class="py-3 my-4" style="padding-bottom:0px;">
-        <div class="container" style="padding-bottom:0px;">
+    <script src="JavaScript/contactScript.js"></script>
+    <script src="Javascript/smoothScrolling.js"></script>
+            
+</body>
+     
+<!--This is the footer-->
+ 
+<div class="container-fluid bg-dark">
+    <footer style="position:relative; width:100vw;">
 
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link px-2">Home</a>
-                </li>
+        <div class="container">
+                <br>
 
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link px-2">Portfolio</a>
-                </li>
+            <div class="row">
+                <div class="col" style="top:-50px;"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">
+                    <a style="text-decoration:none;" href="index.html">Home</a>
+                </div>
+                <div class="col">
+                    <a style="text-decoration:none;" href="services.html">Services</a>
+                </div>
+                <div class="col">
+                    <a style="text-decoration:none;" href="contact.html">Contact</a>
+                </div>
+                <div class="col">
+                    <a style="text-decoration:none;" href="about.html">About</a>
+                </div>
+                <div class="col">
+                    <a style="text-decoration:none;" href="blog.html">Blog</a>
+                </div>
+            </div>
 
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link px-2">About</a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col-9"></div>
+                <div class="col-3">
+                    <figcaption class="text-center">
+                        <a class="d-inline" style="text-decoration:none;" href="privacy.html">Privacy</a> <p class="d-inline" style="color:white;">|</p> <a class="d-inline" style="text-decoration:none;" href="terms.html">Terms and Services</a>
+                    </figcaption>
+                </div>
+            
+                <div class="row">
+                    <div class="col"><br></div>
+                </div>
+            </div>
 
-            <p class="text-center">&copy; 2023 Izzy Arcinue</p>
+            <br>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-2">
+                    <p class="center-text" style="color:white; padding-bottom:20px;">
+                        &copy;<em id="date"></em>2023 by Dawn LLC
+                    </p>
+                </div>
+                <div class="col"></div>
+            </div>
         </div>
     </footer>
+</div>
         
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+        
 </html>
