@@ -1,20 +1,36 @@
 body {
     margin:0;
+    font-family:'Poppins', sans-serif;
+    background-color:#E4D0B4;
 }
-
-a {
-    color:#CBE9BF;
-}
-a:hover {
-    color:#65BE41;
-}
-
 .title {
     font-size:5rem;
-    color:#CBE9BF;
+    color:#F9EAD2;
     text-shadow:0 0 5px black;
     z-index:1;
 }
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top:30px;
+}
+section {
+    height:100vh;
+    scroll-snap-align: start;
+}
+
+form {
+    width:100%;
+}
+
+a {
+    color:#F9EAD2;
+}
+a:hover {
+    color:#EFCA8F;
+}
+
+
 
 /* Parallax background */
 
@@ -25,6 +41,34 @@ a:hover {
     background-image:radial-gradient(circle, rgba(255,255,255,1), rgba(255,255,255,0));
     border-radius:50%;
     size:200%;
+}
+
+/* Header gradient */
+#header {
+    background-image: linear-gradient(to bottom right, black, black, #3e3b2f, #edd0a2)
+}
+
+/* Package backgrounds */
+#basic {
+    background-image: linear-gradient(to bottom right, #3A180D, #B87045);
+    text-shadow:0 0 5px black;
+}
+#silver {
+    background-image: linear-gradient(to bottom right, #4D4D4D, #BFBFBF);
+    text-shadow:0 0 5px black;
+}
+#gold {
+    background-image: linear-gradient(to bottom right, #654017, #E9C467);
+    text-shadow:0 0 5px black;
+}
+
+#carte {
+    background-image: linear-gradient(to bottom right, #9967CB, #D5C8DE);
+    text-shadow:0 0 5px black;
+}
+#atomic {
+    background-image: linear-gradient(to bottom right, black, #28003B, #EC00F6);
+    text-shadow:0 0 5px black;
 }
 
 .circle {
